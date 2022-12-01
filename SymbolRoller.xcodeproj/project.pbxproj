@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C87B37EC2937A9E100A5E74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B37EB2937A9E100A5E74E /* AppDelegate.swift */; };
 		C87B37EE2937A9E100A5E74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B37ED2937A9E100A5E74E /* SceneDelegate.swift */; };
-		C87B37F02937A9E100A5E74E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B37EF2937A9E100A5E74E /* ViewController.swift */; };
 		C87B37F32937A9E100A5E74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87B37F12937A9E100A5E74E /* Main.storyboard */; };
 		C87B37F52937A9E100A5E74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87B37F42937A9E100A5E74E /* Assets.xcassets */; };
 		C87B37F82937A9E100A5E74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87B37F62937A9E100A5E74E /* LaunchScreen.storyboard */; };
 		C87B38032937A9E200A5E74E /* SymbolRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B38022937A9E200A5E74E /* SymbolRollerTests.swift */; };
 		C87B380D2937A9E200A5E74E /* SymbolRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B380C2937A9E200A5E74E /* SymbolRollerUITests.swift */; };
 		C87B380F2937A9E200A5E74E /* SymbolRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87B380E2937A9E200A5E74E /* SymbolRollerUITestsLaunchTests.swift */; };
+		C8FC76C92938FE4D007AECB2 /* SymbolRollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC76C82938FE4D007AECB2 /* SymbolRollerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		C87B37E82937A9E100A5E74E /* SymbolRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbolRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87B37EB2937A9E100A5E74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C87B37ED2937A9E100A5E74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C87B37EF2937A9E100A5E74E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C87B37F22937A9E100A5E74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C87B37F42937A9E100A5E74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87B37F72937A9E100A5E74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		C87B38082937A9E200A5E74E /* SymbolRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymbolRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87B380C2937A9E200A5E74E /* SymbolRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRollerUITests.swift; sourceTree = "<group>"; };
 		C87B380E2937A9E200A5E74E /* SymbolRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8FC76C82938FE4D007AECB2 /* SymbolRollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolRollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				C87B37EB2937A9E100A5E74E /* AppDelegate.swift */,
 				C87B37ED2937A9E100A5E74E /* SceneDelegate.swift */,
-				C87B37EF2937A9E100A5E74E /* ViewController.swift */,
 				C87B37F12937A9E100A5E74E /* Main.storyboard */,
+				C8FC76C82938FE4D007AECB2 /* SymbolRollerViewController.swift */,
 				C87B37F42937A9E100A5E74E /* Assets.xcassets */,
 				C87B37F62937A9E100A5E74E /* LaunchScreen.storyboard */,
 				C87B37F92937A9E100A5E74E /* Info.plist */,
@@ -258,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87B37F02937A9E100A5E74E /* ViewController.swift in Sources */,
 				C87B37EC2937A9E100A5E74E /* AppDelegate.swift in Sources */,
 				C87B37EE2937A9E100A5E74E /* SceneDelegate.swift in Sources */,
+				C8FC76C92938FE4D007AECB2 /* SymbolRollerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
