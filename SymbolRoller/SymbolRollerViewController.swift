@@ -17,8 +17,13 @@ class SymbolRollerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(systemName: "cloud")
-        // Do any additional setup after loading the view.
+        
+        // TODO:
+        // - 심볼에서 하나를 임으로 추출해서,
+        // - 이미지와 텍스트 설정을 한다
+        // DRY
+        // Do not Repeat Yourself
+        reload()
         print("view did load...")
     }
     
@@ -32,19 +37,15 @@ class SymbolRollerViewController: UIViewController {
         print("view did appear...")
     }
     
+    func reload() {
+        let symbol = symbols.randomElement()!
+        imageView.image = UIImage(systemName: symbol)
+        label.text = symbol
+    }
     
+    // 버튼 이벤트
     @IBAction func buttonTapped(_ sender: Any) {
         print("buton tapped...")
+        reload()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
